@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    overflow-x: hidden;
+  }
+  
 header {
     position: fixed;
     width: 100%;
@@ -60,7 +65,7 @@ header ul li ul li a {
     font-size: 18px; /* Match headerens tekststørrelse */
     font-weight: 600; /* Match headerens tekstvægt */
     color: #fff; /* Sæt tekstfarven til hvid */
-    line-height: 1.0; /* Sørg for ens linjehøjde */
+    
 }
 
 header ul li ul li a:hover {

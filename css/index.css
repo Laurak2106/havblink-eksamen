@@ -1,0 +1,56 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  header {
+    position: fixed;
+    z-index: 10;
+}
+
+  .image-container {
+    position: relative; /* Gør det muligt at placere tekst oven på billedet */
+    z-index: 1; /* Sørger for at billedet er under teksten */
+    max-width: 100%; /* Containerens maksimale bredde */
+    width: 100%; /* Billedets bredde */
+    margin: 0 auto; /* Centrerer containeren */
+}
+
+/* Billedet */
+.image-container img {
+    width: 100%; /* Fylder hele containerens bredde */
+    height: auto; /* Bevarer billedets proportioner */
+    display: block; /* Fjerner mellemrum under billedet */
+}
+
+/* Tekst over billedet */
+.image-container .text-overlay {
+    position: absolute; /* Placeres relativt til containeren */
+    top: 50%; /* Placer teksten midt på billedet vertikalt */
+    left: 50%; /* Placer teksten midt på billedet horisontalt */
+    transform: translate(-50%, -50%); /* Flytter teksten for at centrere den */
+    color: white; /* Tekstfarve */
+    padding: 10px 20px; /* Indre afstand til teksten */
+    font-weight: bold; /* Gør teksten fed */
+    font-size: 60px; /* Tekstens størrelse */
+    text-align: center; /* Centrerer teksten */
+   
+}
+
+  /* velkomst */
+  .velkomst{
+    text-align: center;
+    margin-top: 100px; /* Placerer teksten under headeren */
+  }
+  .velkomst h1{
+    text-align: center;
+    font-size: 60px;
+    color: #B5956E;
+    margin-bottom: 30px;
+  }
+  .velkomst p{
+    font-size: 20px;
+    line-height: 1.6;
+  }
