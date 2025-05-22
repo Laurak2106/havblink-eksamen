@@ -5,23 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Havblink hvidvin</title>
     <link rel="stylesheet" href="css/headerfooter.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="logoet.svg" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <body>
     <header>
-        <a href="index.html"><img id="logo" src="images/header/logo-hvid.png" alt="Havblink Logo"></a>
-
-        <nav id="laptopnav">
-            <a href=".html">Vores vine</a>
-            <a href="klubben.html">Om os</a>
-            <a href="blivklaedtpaa.html">Begivenheder</a>
-            <a href="banen.html">Kontakt</a>
-            <a href=>Shop</a>
-        </nav>
-        <img id="burgericon" src="images/header/burgericon.svg" alt="Burger Icon">
+        <a href="index.html"><img id="logo" src="img/logoet.svg" alt="Havblink Logo"></a>
+        <div class="laptopnav"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Vores vine </a> <i class="fa-solid fa-caret-down"></i>
+                      <ul>
+                        <li><a href="#">Hvidvine</a></li> 
+                        <li><a href="#">Find den perfekte vin</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Om os</a> <i class="fa-solid fa-caret-down"></i>
+                      <ul>
+                        <li><a href="#">Vingårdens historie</a>
+                         <li><a href="#">Druens gang</a></li> 
+                         <li><a href="#">Solaris druen</a></li>
+                       </ul>
+                    </li>  
+                    <li><a href="#">Begivenheder</a> <i class="fa-solid fa-caret-down"></i>
+                      <ul>
+                        <li><a href="#">Vinsmagning</a></li>
+                        <li><a href="#">Rundvisninger på gården</a></li> 
+                         <li><a href="#">Årsoversigt</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Shop</a> <i class="fa-solid fa-caret-down"></i>
+                      <ul>
+                        <li><a href="#">Gaveidéer</a></li>
+                        <li><a href="#">Populære vine</a></li> 
+                      </ul>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <main>
+      <div class="image-container">
+        <img src="img/forside.jpg" alt="Herobillede">
+        <div class="text-overlay">Dette er tekst over billedet</div>
+    </div>
         
     </main>
     <footer class="footer-container">
@@ -40,12 +66,10 @@
       
             <div class="footer-section">
               <h3>Følg os på</h3>
-              <a href="https://www.facebook.com/Tollundgaard/?locale=da_DK" target="_blank" class="fb-icon">
-                <img src="images/footer/facebook.png" alt="Facebook">
-              </a>
+              <div class="fb-icon">
+                <img src="img/facebook.png" alt="Facebook">
+              </div>
             </div>
-          </div>
-        </div>
       </footer>
     
 </body>

@@ -1,10 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    width: 100%;
+    min-height: 150px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+header ul {
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 40px;
+}
+header ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #013B4C;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+header ul li:hover ul {
+    display: block; /* Vis dropdown-menuen ved hover */
+}
+
+header ul li ul li {
+    position: relative;
+    width: 100%;
+    padding:0;
+    margin: 0;
+}
+
+header ul li ul li a {
+    display: block; /* Gør links til blokkelementer, så de står under hinanden */
+    width: 100%; /* Gør dem 100% brede */
+    padding: 5px 10px; /* Tilføj luft omkring teksten */
+    box-sizing: border-box; /* Sørg for, at padding ikke påvirker bredden */
+    text-decoration: none;
+    font-size: 18px; /* Match headerens tekststørrelse */
+    font-weight: 600; /* Match headerens tekstvægt */
+    color: #fff; /* Sæt tekstfarven til hvid */
+    line-height: 1.0; /* Sørg for ens linjehøjde */
+}
+
+header ul li ul li a:hover {
+    background-color: #B5956E;
+}
+
+
+.fa-caret-down {
+    margin: 0 5px; /* Reducer  margin for at mindske afstanden */
+    vertical-align: middle; /* Juster ikonet, så det flugter med teksten */
+    font-size: 14px; /* Juster størrelsen på ikonet, hvis nødvendigt */
+    display: inline-block; /* Sørg for, at ikonet opfører sig som et inline-element */
+    padding: 0; /* Fjern padding for at reducere afstand */
+}
+
+#logo {
+    position: absolute;
+    top: -45px;
+    left: 10px;
+    height: auto;
+    width: 300px;
+    z-index: 1000;
+
+}
 
 footer {
     background-color: #1F373A; 
     padding: 30px 0;
     font-size: 16px;
-    text-align: left;
-    font-family: 'albertsans', sans-serif;
+    text-align: center;
 }
 
 .footer-container {
@@ -27,9 +113,15 @@ footer {
 .footer-section p {
     margin: 30px 0;
     line-height: 2;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
+    text-align: center;
 }
+.fb-icon img {
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+  }
 
 
 
