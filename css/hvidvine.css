@@ -1,4 +1,5 @@
-    html, body {
+
+   html, body {
     margin: 0;
     padding: 0;  
   }
@@ -56,20 +57,25 @@
   .ikon-boks p {
     margin-top: 10px;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.5;
   }
   .allevine {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px 10px;
     background-color: #E9E3DD;
     margin: 50px auto;
     max-width: 100%;
-    gap: 40px;
+    gap: 20px;
   }
  .allevine img {
-    width: 40%;
+    width: 50%;
     height: auto;
+ }
+.produkt-info {
+    width: 40%;
+    text-align: center;
  }
  .allevine h2 {
     font-size: 30px;
@@ -82,19 +88,19 @@
     font-size: 20px; ;
     margin-bottom: 15px;
     color: black;
-    line-height: 1.2;
+    line-height: 1.5;
     text-align: center;
  }
  .knap {
     display: block;
-    margin: 20px auto;
+    margin: 60px auto;
     padding: 10px 40px;
     background-color:#013B4C;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
  }
     .knap:hover {
     background-color: #B5956E;

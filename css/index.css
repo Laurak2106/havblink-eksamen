@@ -1,8 +1,7 @@
 
 html, body {
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
   }
 
   header {
@@ -36,7 +35,6 @@ html, body {
     font-weight: bold; /* Gør teksten fed */
     font-size: 60px; /* Tekstens størrelse */
     text-align: center; /* Centrerer teksten */
-   
 }
 
   /* velkomst */
@@ -46,11 +44,136 @@ html, body {
   }
   .velkomst h1{
     text-align: center;
-    font-size: 60px;
     color: #B5956E;
     margin-bottom: 30px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
   }
   .velkomst p{
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400; 
+    color: #000000;
   }
+  .text-overlay {
+    font-size: 60px; 
+    text-align: center; 
+    font-family: "Nunito", sans-serif;
+}
+
+  h1, h3 {
+    color: #B5956E;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: "Nunito", sans-serif;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    padding: 20px;
+}
+.about p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+}
+
+.about-images img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #013B4C;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #B5956E;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.cards p {
+    line-height: 1.5;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 300px; /* Maximum width of 300px */
+    background-color:#B5956E4D;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+}
+
+.card button {
+    margin-top: 20px;
+}
