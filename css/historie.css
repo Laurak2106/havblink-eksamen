@@ -1,0 +1,124 @@
+.icon-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.icon {
+    flex: 1;
+    max-width: 300px;
+}
+
+.icon img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.icon p {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.story-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.story-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 30px;
+}
+.story-text h3 {
+    color: #B5956E;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Nunito", sans-serif;
+}
+.story-text p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.two-column-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 50px;
+    background-color: #CEC9C4;
+}
+
+.column {
+    flex: 1;
+    max-width: 500px;
+    margin: 0;
+    overflow: hidden;
+    border: 2px solid #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.column h3 {
+    color: #B5956E;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+.column p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.column button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #013B4C;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.column button:hover {
+    background-color: #B5956E;
+}

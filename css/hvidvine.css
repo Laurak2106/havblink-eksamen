@@ -16,7 +16,6 @@ html, body {
     margin: 0 auto; /* Centrerer containeren */
 }
 
-/* Billedet */
 .image-container img {
     width: 100%; /* Fylder hele containerens bredde */
     height: auto; /* Bevarer billedets proportioner */
