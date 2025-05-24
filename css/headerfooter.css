@@ -92,7 +92,7 @@ header ul li ul li a:hover {
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     background-color: #1F373A; 
     color: #fff;
@@ -101,8 +101,11 @@ header ul li ul li a:hover {
     gap: 20px;
 }
 .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex: 1;
-    text-align: center;
+    text-align: left;
     min-width: 200px; /* Minimum bredde for hver sektion */
     margin: 0 10px;
 }
@@ -113,6 +116,7 @@ header ul li ul li a:hover {
     font-size: 24px;
     font-family: "Albert Sans", sans-serif;
     font-weight: 700;
+    text-align: left;
 }
 
 .footer-section p {
@@ -120,14 +124,18 @@ header ul li ul li a:hover {
     line-height:1.5;
     font-size: 18px;
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-family: "Albert Sans", sans-serif;
     font-weight: 600;
 }
-.fb-icon img {
-    width: 40%;
-    height: auto;
+.fb-icon {
     margin-top: 10px;
+}
+.fb-icon img {
+    width: 100px;
+    height: auto;
+    margin-top: 0;
+    align-items: flex-start;
 }
 .footer-section a {
     color: #fff;
