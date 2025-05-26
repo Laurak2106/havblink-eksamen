@@ -1,3 +1,42 @@
+
+html, body {
+    margin: 0;
+    padding: 0; 
+  }
+
+  header {
+    position: fixed;
+    z-index: 10;
+}
+
+  .image-container {
+    position: relative; /* Gør det muligt at placere tekst oven på billedet */
+    z-index: 1; /* Sørger for at billedet er under teksten */
+    max-width: 100%; /* Containerens maksimale bredde */
+    width: 100%; /* Billedets bredde */
+    margin: 0 auto; /* Centrerer containeren */
+}
+
+/* Billedet */
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/* Tekst over billedet */
+.image-container .text-overlay {
+    position: absolute; /* Placeres relativt til containeren */
+    top: 50%; /* Placer teksten midt på billedet vertikalt */
+    left: 50%; /* Placer teksten midt på billedet horisontalt */
+    transform: translate(-50%, -50%); /* Flytter teksten for at centrere den */
+    color: white; /* Tekstfarve */
+    padding: 10px 20px; /* Indre afstand til teksten */
+    font-weight: 600;
+    font-size: 60px; /* Tekstens størrelse */
+    text-align: center; /* Centrerer teksten */
+    font-family: "Nunito", sans-serif;
+}
 .icon-section {
     display: flex;
     justify-content: space-around;
@@ -24,10 +63,11 @@
 
 .story-section {
     display: flex;
+    margin-top: 30px;
     align-items: center;
-    padding: 50px 20px;
-    gap: 20px;
+    padding: 20px 130px;
     background-color: #fff;
+    gap: 50px;
 }
 
 .story-text {
@@ -36,6 +76,7 @@
     text-align: center;
     border: 2px solid #000;
     padding: 30px;
+    margin-bottom: 60px;
 }
 .story-text h3 {
     color: #B5956E;
@@ -51,20 +92,25 @@
 
 .story-image {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .story-image img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .two-column-section {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    padding: 50px;
+    gap: 0px;
+    padding: 20px 130px;
     background-color: #CEC9C4;
+    margin-bottom: 100px;
 }
 
 .column {
@@ -77,6 +123,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 20px;
 }
 
 .column img {

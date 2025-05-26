@@ -19,9 +19,9 @@ html, body {
 
 /* Billedet */
 .image-container img {
-    width: 100%; /* Fylder hele containerens bredde */
-    height: auto; /* Bevarer billedets proportioner */
-    display: block; /* Fjerner mellemrum under billedet */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
 /* Tekst over billedet */
@@ -32,7 +32,7 @@ html, body {
     transform: translate(-50%, -50%); /* Flytter teksten for at centrere den */
     color: white; /* Tekstfarve */
     padding: 10px 20px; /* Indre afstand til teksten */
-    font-weight: bold; /* Gør teksten fed */
+    font-weight: 600;
     font-size: 60px; /* Tekstens størrelse */
     text-align: center; /* Centrerer teksten */
 }
@@ -40,7 +40,8 @@ html, body {
   /* velkomst */
   .velkomst{
     text-align: center;
-    margin-top: 100px; /* Placerer teksten under headeren */
+    margin-top: 100px; 
+    margin-bottom: 40px;
   }
   .velkomst h1{
     text-align: center;
@@ -80,11 +81,6 @@ p {
     font-size: 20px;
 }
 
-header {
-    text-align: center;
-    padding: 50px 20px;
-}
-
 .about {
     display: flex;
     justify-content: space-between;
@@ -110,7 +106,6 @@ header {
     display: flex;
     justify-content: center;
     flex: 1;
-    gap: 20px;
 }
 
 .about-images img {
@@ -161,12 +156,12 @@ button:hover {
     background-color:#B5956E4D;
     border: 1px solid #ddd;
     overflow: hidden;
-    padding: 0;
+    padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .card img {

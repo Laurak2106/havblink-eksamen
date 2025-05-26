@@ -22,7 +22,7 @@ html, body {
     display: block; /* Fjerner mellemrum under billedet */
 }
 
-/* Tekst over billedet */
+
 .image-container .text-overlay {
     position: absolute; /* Placeres relativt til containeren */
     top: 50%; /* Placer teksten midt på billedet vertikalt */
@@ -30,66 +30,75 @@ html, body {
     transform: translate(-50%, -50%); /* Flytter teksten for at centrere den */
     color: white; /* Tekstfarve */
     padding: 10px 20px; /* Indre afstand til teksten */
-    font-weight: bold; /* Gør teksten fed */
+    font-weight: 600;
     font-size: 60px; /* Tekstens størrelse */
     text-align: center; /* Centrerer teksten */
+    font-family: "Nunito", sans-serif;
 }
 
-  .ikoner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 325px;
-    margin-top: 40px;
-    
-  }
-  .ikon-boks {
-    width: 150px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .ikon-boks img {
-    width: 150px;
-    height: 150px;
-  }
-  .ikon-boks p {
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 1.5;
-  }
+.icon-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.icon {
+  flex: 1;
+  max-width: 300px;
+}
+
+.icon img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.icon p {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
   .allevine {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 0 100px;
     background-color: #E9E3DD;
-    margin: 50px auto;
     max-width: 100%;
-    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 100px
   }
+  .special-bg {
+    background-color:#B5956E4D;
+}
+
  .allevine img {
     width: 50%;
     height: auto;
+    margin-bottom: 0;
  }
 .produkt-info {
     width: 40%;
     text-align: center;
  }
- .allevine h2 {
+ .allevine h3 {
     font-size: 30px;
     color: #B5956E;
     margin-top: 0;
     margin-bottom: 20px;
     text-align: center;
+    font-family: "Nunito", sans-serif;
  }
  .allevine p {
-    font-size: 20px; ;
-    margin-bottom: 15px;
-    color: black;
+    font-size: 20px;
     line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400; 
+    margin-bottom: 15px;
     text-align: center;
  }
+ 
  .knap {
     display: block;
     margin: 60px auto;

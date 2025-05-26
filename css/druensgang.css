@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0; 
+  }
+
+  header {
+    position: fixed;
+    z-index: 10;
+}
+.image-container {
+    position: relative; /* Gør det muligt at placere tekst oven på billedet */
+    z-index: 1; /* Sørger for at billedet er under teksten */
+    max-width: 100%; /* Containerens maksimale bredde */
+    width: 100%; /* Billedets bredde */
+    margin: 0 auto; /* Centrerer containeren */
+}
+
+.image-container img {
+    width: 100%; /* Fylder hele containerens bredde */
+    height: auto; /* Bevarer billedets proportioner */
+    display: block; /* Fjerner mellemrum under billedet */
+}
+
+/* Tekst over billedet */
+.image-container .text-overlay {
+    position: absolute; /* Placeres relativt til containeren */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Flytter teksten for at centrere den */
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 60px; 
+    font-weight: 600;
+    text-align: center; 
+    font-family: "Nunito", sans-serif;
+}
+
+
+.intro-section {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.intro-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* Årets gang layout */
+.year-timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 10px;
+    padding: 0 20px;
+    margin-bottom: 100px;
+}
+
+.timeline-item {
+    text-align: center;
+    padding: 100px;
+}
+
+.timeline-item img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+.timeline-item h3 {
+    color: #B5956E;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.timeline-item p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400; 
+}
+
+
+/* Responsivt design */
+@media (max-width: 768px) {
+    .year-timeline {
+        grid-template-columns: 1fr; /* En kolonne på små skærme */
+    }
+}
