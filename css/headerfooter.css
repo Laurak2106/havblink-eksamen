@@ -11,7 +11,7 @@ html{
 header {
     position: fixed;
     width: 100%;
-    min-height: 150px;
+    min-height: 110px;
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
@@ -58,12 +58,12 @@ header ul li ul li {
 
 header ul li ul li a {
     display: block; /* Gør links til blokkelementer, så de står under hinanden */
-    width: 100%; /* Gør dem 100% brede */
+    width: 100%; 
     padding: 5px 10px; /* Tilføj luft omkring teksten */
-    box-sizing: border-box; /* Sørg for, at padding ikke påvirker bredden */
+    box-sizing: border-box; 
     text-decoration: none;
-    font-size: 18px; /* Match headerens tekststørrelse */
-    font-weight: 600; /* Match headerens tekstvægt */
+    font-size: 18px; 
+    font-weight: 600; 
     color: #fff; /* Sæt tekstfarven til hvid */
     
 }
@@ -74,10 +74,10 @@ header ul li ul li a:hover {
 
 
 .fa-caret-down {
-    margin: 0 10px; /* Reducer  margin for at mindske afstanden */
-    font-size: 18px; /* Juster størrelsen på ikonet, hvis nødvendigt */
+    margin-right: 20px; 
+    font-size: 18px; 
     display: inline-block; 
-    padding: 0; /* Fjern padding for at reducere afstand */
+    padding: 0;
 }
 
 #logo {
@@ -85,7 +85,7 @@ header ul li ul li a:hover {
     top: -45px;
     left: 10px;
     height: auto;
-    width: 300px;
+    width: 250px;
     z-index: 1000;
 }
 
