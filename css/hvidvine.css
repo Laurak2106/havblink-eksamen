@@ -9,30 +9,30 @@ html, body {
     z-index: 10;
 }
  .image-container {
-    position: relative; /* Gør det muligt at placere tekst oven på billedet */
-    z-index: 1; /* Sørger for at billedet er under teksten */
-    max-width: 100%; /* Containerens maksimale bredde */
-    width: 100%; /* Billedets bredde */
-    margin: 0 auto; /* Centrerer containeren */
+    position: relative; 
+    z-index: 1; 
+    max-width: 100%; 
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 .image-container img {
-    width: 100%; /* Fylder hele containerens bredde */
-    height: auto; /* Bevarer billedets proportioner */
-    display: block; /* Fjerner mellemrum under billedet */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
 
 .image-container .text-overlay {
-    position: absolute; /* Placeres relativt til containeren */
-    top: 50%; /* Placer teksten midt på billedet vertikalt */
-    left: 50%; /* Placer teksten midt på billedet horisontalt */
-    transform: translate(-50%, -50%); /* Flytter teksten for at centrere den */
-    color: white; /* Tekstfarve */
-    padding: 10px 20px; /* Indre afstand til teksten */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    padding: 10px 20px; 
     font-weight: 600;
-    font-size: 60px; /* Tekstens størrelse */
-    text-align: center; /* Centrerer teksten */
+    font-size: 60px; 
+    text-align: center; 
     font-family: "Nunito", sans-serif;
 }
 
@@ -42,6 +42,8 @@ html, body {
   align-items: center;
   padding: 30px 20px;
   text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .icon {
@@ -112,4 +114,41 @@ html, body {
  }
     .knap:hover {
     background-color: #B5956E;
+
     }
+    @media (max-width: 768px) {
+      .text-overlay{
+        font-size: 40px;
+      }
+      .icon-section {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px; 
+      }
+  
+      .icon {
+          margin-bottom: 20px; 
+      }
+  
+      .allevine {
+          flex-direction: column; 
+          text-align: center; 
+      }
+  
+      .allevine img {
+        order: 2; /* Billedet vises under teksten */
+        width: 500px; 
+    }
+  
+      .produkt-info {
+          order: 1; /* Teksten skal komme før billedet */
+      }
+  
+      .produkt-info h3 {
+          font-size: 20px; 
+      }
+  
+      .produkt-info p {
+          font-size: 16px; 
+      }
+  }

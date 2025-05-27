@@ -8,25 +8,25 @@ html, body {
     z-index: 10;
 }
 .image-container {
-    position: relative; /* Gør det muligt at placere tekst oven på billedet */
-    z-index: 1; /* Sørger for at billedet er under teksten */
-    max-width: 100%; /* Containerens maksimale bredde */
-    width: 100%; /* Billedets bredde */
-    margin: 0 auto; /* Centrerer containeren */
+    position: relative; 
+    z-index: 1; 
+    max-width: 100%; 
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 .image-container img {
-    width: 100%; /* Fylder hele containerens bredde */
-    height: auto; /* Bevarer billedets proportioner */
-    display: block; /* Fjerner mellemrum under billedet */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
 /* Tekst over billedet */
 .image-container .text-overlay {
-    position: absolute; /* Placeres relativt til containeren */
+    position: absolute; 
     top: 50%; 
     left: 50%; 
-    transform: translate(-50%, -50%); /* Flytter teksten for at centrere den */
+    transform: translate(-50%, -50%); 
     color: white; 
     padding: 10px 20px; 
     font-size: 60px; 
@@ -90,7 +90,13 @@ html, body {
 
 /* Responsivt design */
 @media (max-width: 768px) {
+    .text-overlay{
+        font-size: 40px;
+      }
     .year-timeline {
         grid-template-columns: 1fr; /* En kolonne på små skærme */
+    }
+    .intro-section p{
+        font-size: 18px;
     }
 }

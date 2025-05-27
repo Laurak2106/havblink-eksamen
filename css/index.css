@@ -72,6 +72,7 @@ html, body {
 h3 {
     font-size: 30px;
     font-family: "Nunito", sans-serif;
+    margin-bottom: 20px;
 }
 
 p {
@@ -79,6 +80,7 @@ p {
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 20px;
+    line-height: 1.5;
 }
 
 .about {
@@ -177,4 +179,58 @@ button:hover {
 .card button {
     margin-top: auto;
     margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .text-overlay h1{
+        font-size: 30px;
+      }
+    .text-overlay p{
+        font-size: 18px;
+    }
+    
+    .velkomst h3{
+        font-size: 40px;
+    }
+    .velkomst p{
+        font-size: 16px;
+    }
+
+    .about {
+        flex-direction: column; /* Skift layout til lodret */
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .about-text h3 {
+        font-size: 25px; 
+    }
+
+    .about-text p {
+        font-size: 16px; 
+    }
+
+    .about-text button {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+  
+    .about-images img {
+        max-width: 300px; 
+    }
+
+    /* Kortene */
+    .cards {
+        flex-direction: column; /* Skift layout til lodret */
+        align-items: center; /* Centrer kortene */
+    }
+
+    .card {
+        max-width: 400px; /* Sæt en maksimal bredde på kortene */
+        margin-bottom: 20px; /* Luft mellem kortene */
+    }
 }

@@ -46,7 +46,7 @@ header ul li ul {
     margin: 0;
 }
 header ul li:hover ul {
-    display: block; /* Vis dropdown-menuen ved hover */
+    display: block; 
 }
 
 header ul li ul li {
@@ -57,14 +57,14 @@ header ul li ul li {
 }
 
 header ul li ul li a {
-    display: block; /* Gør links til blokkelementer, så de står under hinanden */
+    display: block; 
     width: 100%; 
-    padding: 5px 10px; /* Tilføj luft omkring teksten */
+    padding: 5px 10px; 
     box-sizing: border-box; 
     text-decoration: none;
     font-size: 18px; 
     font-weight: 600; 
-    color: #fff; /* Sæt tekstfarven til hvid */
+    color: #fff; 
     
 }
 
@@ -143,4 +143,29 @@ header ul li ul li a:hover {
 
 .footer-section a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap; 
+        text-align: center; 
+        padding: 20px 20px; 
+    }
+
+    .footer-section {
+        margin: 10px auto; 
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 20px; 
+    }
+
+    .footer-section p {
+        font-size: 16px; 
+    }
+
+    .fb-icon img {
+        width: 60px; 
+    }
 }
