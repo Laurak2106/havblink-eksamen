@@ -10,33 +10,35 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <body>
-    <header>
-        <a href="index.html"><img id="logo" src="img/logoet.svg" alt="Havblink Logo"></a>
-        <div class="laptopnav"></div>
+  <header class="header">
+        <a href="index.html"><img id="logo" src="img/Logo.svg" alt="Havblink Logo"></a>
+        <div class="burgermenu">
+          <span></span>
+        </div>
             <nav>
                 <ul>
-                    <li><a href="#">Vores vine </a> <i class="fa-solid fa-caret-down"></i>
+                    <li><a href="#">Vores vine <i class="fa-solid fa-caret-down"></i></a> 
                       <ul>
                         <li><a href="hvidvine.html">Hvidvine</a></li> 
                         <li><a href="findvin.html">Find den perfekte vin</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Om os</a> <i class="fa-solid fa-caret-down"></i>
+                    <li><a href="#">Om os <i class="fa-solid fa-caret-down"></i></a> 
                       <ul>
                         <li><a href="historie.html">Vingårdens historie</a>
-                         <li><a href="druensgang.html">Druens gang</a></li> 
-                         <li><a href="#">Solaris druen</a></li>
+                        <li><a href="druensgang.html">Druens gang</a></li> 
+                        <li><a href="#">Solaris druen</a></li>
                        </ul>
                     </li>  
-                    <li><a href="#">Begivenheder</a> <i class="fa-solid fa-caret-down"></i>
+                    <li><a href="#">Begivenheder  <i class="fa-solid fa-caret-down"></i></a>
                       <ul>
                         <li><a href="#">Vinsmagning</a></li>
                         <li><a href="#">Rundvisninger</a></li> 
-                         <li><a href="#">Årsoversigt</a></li>
+                        <li><a href="#">Årsoversigt</a></li>
                       </ul>
                     </li>
                     <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Shop</a> <i class="fa-solid fa-caret-down"></i>
+                    <li><a href="#">Shop <i class="fa-solid fa-caret-down"></i></a> 
                       <ul>
                         <li><a href="#">Gaveidéer</a></li>
                         <li><a href="#">Populære vine</a></li> 
@@ -45,6 +47,13 @@
                 </ul>
             </nav>
     </header>
+    <script>
+      let burgermenu = document.querySelector('.burgermenu');
+      let header = document.querySelector('.header');
+      burgermenu. onclick = function(){
+        header.classList.toggle('active');
+      };
+    </script>
       <div class="image-container">
         <img src="img/forside.svg" alt="Herobillede">
         <div class="text-overlay"><h1>Havblink</h1>

@@ -32,6 +32,8 @@ html, body {
     transform: translate(-50%, -50%); 
     color: white; 
     padding: 10px 20px; 
+}
+.text-overlay h1{
     font-weight: 600;
     font-size: 60px; 
     text-align: center; 
@@ -174,7 +176,7 @@ html, body {
 }
 
 @media (max-width: 768px) {
-    .text-overlay{
+    .text-overlay h1{
       font-size: 40px;
     }
     .icon-section {
